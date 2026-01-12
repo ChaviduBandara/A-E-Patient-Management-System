@@ -53,13 +53,14 @@ public class Patient {
 
     // checking if patient met 4h NHS target
     public boolean metNHSTarget(){
-        if (treatmentEndTime == 0) return false;
+        if (treatmentEndTime == 0){
+            return false;
+        }
         long totalJourneyMs = treatmentEndTime - arrivalTime;
         // 4000ms represents 4 simulated hours
         return totalJourneyMs <= 4000;
     }
 
-    //Treatment duration in seconds
     public long getTreatmentDurationSeconds(){
         if (treatmentStartTime == 0 || treatmentEndTime == 0){
             return 0;
@@ -70,6 +71,6 @@ public class Patient {
 
     @Override
     public String toString(){
-        return "Patient{" + "id=" + patientID + ", name='" + name + '\'' + ", speciality='" + speciality + '\'' + '}';
+        return "Patient {" + "id=" + patientID + ", name='" + name + '\'' + ", speciality='" + speciality + '\'' + '}';
     }
 }
