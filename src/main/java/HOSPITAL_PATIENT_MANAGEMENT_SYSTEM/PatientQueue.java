@@ -15,7 +15,7 @@ public class PatientQueue {
     // Adding a patient to the queue (called by the producer)
     public void addPatient(Patient patient) throws InterruptedException{
         int expectedSize = queue.size() + 1;
-        System.out.println("\t[QUEUE] Patient-" + patient.getPatientID() + " added to " + speciality + " queue. Queue size " + expectedSize);
+        System.out.println("\t[QUEUE] Patient - " + patient.getPatientID() + " added to " + speciality + " queue. Queue size " + expectedSize);
         queue.put(patient);
 
     }
@@ -30,10 +30,12 @@ public class PatientQueue {
         return queue.isEmpty();
     }
 
+    // getting the queue size
     public int getSize(){
         return queue.size();
     }
 
+    // type of the speciality
     public String getSpeciality(){
         return speciality;
     }
