@@ -51,7 +51,7 @@ public class Patient {
         this.treatmentEndTime = System.currentTimeMillis();
     }
 
-    // checking if patient met 4h NHS target
+    // checking if the patient met 4h NHS target
     public boolean metNHSTarget(){
         if (treatmentEndTime == 0){
             return false;

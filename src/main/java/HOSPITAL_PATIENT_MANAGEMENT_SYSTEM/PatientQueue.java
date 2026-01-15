@@ -20,7 +20,7 @@ public class PatientQueue {
 
     }
 
-    // Getting the next patient rom the queue (called by the consumer)
+    // Getting next patient rom the queue (called by the consumer)
     public Patient getPatient() throws InterruptedException {
         return queue.take();  // Blocks if it is empty
     }
@@ -30,12 +30,12 @@ public class PatientQueue {
         return queue.isEmpty();
     }
 
-    // getting the queue size
+    // getting queue size
     public int getSize(){
         return queue.size();
     }
 
-    // type of the speciality
+    // speciality type
     public String getSpeciality(){
         return speciality;
     }
