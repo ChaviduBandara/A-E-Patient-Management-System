@@ -44,7 +44,7 @@ public class PerformanceMetrics {
     public void recordArrival(String speciality){
         totalPatientsArrived.incrementAndGet();
 
-        // Updating the the waiting counter for specific speciality
+        // Updating the waiting counter for specific speciality
         if (speciality.equals("Paediatrician")){
             paediatricWaiting.incrementAndGet();
         } else if (speciality.equals("Surgeon")) {
