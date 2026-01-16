@@ -8,7 +8,7 @@ public class Consultant implements Runnable{
     private final String speciality;
     private final String shift;
     private final PatientQueue queue;
-    private final PerformanceMetrics metrics;  // Traking metrics
+    private final PerformanceMetrics metrics;  // Tracking metrics
     private volatile boolean running = true;   // Volatile for thread visibility
     private final Random random = new Random();
     private int patientTreated = 0;
