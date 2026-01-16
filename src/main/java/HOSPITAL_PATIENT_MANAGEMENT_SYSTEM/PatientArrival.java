@@ -30,7 +30,7 @@ public class PatientArrival implements Runnable{
             while(running && patientIdCounter <= totalPatientsToGenerate){
                 // Generating new patients with random speciality
                 String randomSpeciality = specialities[random.nextInt(specialities.length)];
-                Patient patient = new Patient(patientIdCounter, "Patient-" + patientIdCounter, randomSpeciality);
+                Patient patient = new Patient(patientIdCounter, "Patient -" + patientIdCounter, randomSpeciality);
                 patientIdCounter++;
 
                 System.out.println(">>> [ARRIVAL] " + patient + " arrived - needs a "  + randomSpeciality);
