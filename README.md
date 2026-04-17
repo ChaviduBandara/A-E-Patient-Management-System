@@ -11,7 +11,7 @@ A concurrent Java simulation of a hospital A&E system with continuous patient ar
 - **Speciality-Based Queues**: Organizes patients by medical speciality for more realistic routing :contentReference[oaicite:1]{index=1}
 - **Shift Rotation Simulation**: Models automated consultant shift changes
 - **Shared Resource Synchronization**: Ensures safe access to common resources in a concurrent environment
-- **Performance Tracking**: Records patient arrival, waiting, and treatment times :contentReference[oaicite:2]{index=2}
+- **Performance Tracking**: Records patient arrival, waiting, and treatment times :contentReference[oaicite:2]{index=2}.
 
 ## Project Overview
 
